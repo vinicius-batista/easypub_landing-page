@@ -3,6 +3,7 @@
     app
     flat
     class="pa-2"
+    style="background-color: #f0f0f0"
   >
     <v-spacer></v-spacer>
     <v-toolbar-title>

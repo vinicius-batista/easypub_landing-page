@@ -1,7 +1,9 @@
 <template>
-  <v-app>
+  <v-app style="background-color: #f0f0f0">
     <Toolbar />
-    <nuxt />
+    <v-content app>
+      <nuxt />
+    </v-content>
   </v-app>
 </template>
 
