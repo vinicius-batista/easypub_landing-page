@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import firebase from 'firebase'
-require('firebase/firestore')
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 
 const config = {
   apiKey: 'AIzaSyAJaFqcCoG8nSFFD93ZBG2hlSweDYZKdxg',
