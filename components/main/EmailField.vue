@@ -1,29 +1,31 @@
 <template>
   <v-layout>
-    <v-flex lg2 offset-lg2>
+    <v-flex lg3 offset-lg2>
       <v-text-field
+        v-model="email"
         placeholder="Digite seu e-mail"
         solo
-        flat
-        color="blue-grey darken-5"
+        append-icon="fa-arrow-right"
+        v-bind="{ loading }"
+        @click:append="sendEmail"
+        id="email-input"
       >
       </v-text-field>
-    </v-flex>
-    <v-flex lg2>
-      <v-btn
-        class="font-weight-bold subheading"
-        color="blue-grey darken-5"
-        dark
-      >
-        Inscreva-se
-        <v-icon right small>fa-arrow-right</v-icon>
-      </v-btn>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 export default {
-  name: 'EmailField'
+  name: 'EmailField',
+  data: () => ({
+    loading: false,
+    email: ''
+  }),
+  methods: {
+    sendEmail () {
+      console.log(this.email)
+    }
+  }
 }
 </script>

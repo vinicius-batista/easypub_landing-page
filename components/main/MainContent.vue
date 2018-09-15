@@ -7,8 +7,8 @@
       lg4 offset-lg2
       class="mt-5"
     >
-      <h1 class="blue-grey--text text--darken-2 font-weight-bold display-2 mb-3">{{ title }}</h1>
-      <h4 class="blue-grey--text text--darken-2 font-weight-medium subheading">{{ subtitle }}</h4>
+      <h1 class="primary--text font-weight-bold display-2 mb-3">{{ title }}</h1>
+      <h4 class="primary--text font-weight-medium subheading">{{ subtitle }}</h4>
     </v-flex>
     <v-flex
       lg4

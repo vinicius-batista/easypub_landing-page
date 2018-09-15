@@ -7,19 +7,19 @@
   >
     <v-spacer></v-spacer>
     <v-toolbar-title>
-      <a class="blue-grey--text text--darken-2 font-weight-bold headline">EasyPub</a>
+      <a class="primary--text font-weight-bold headline">EasyPub</a>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-btn
-        color="blue-grey darken-2"
+        color="primary"
         class="font-weight-bold subheading"
         flat
       >
         Sobre
       </v-btn>
       <v-btn
-        color="blue-grey darken-2"
+        color="primary"
         class="font-weight-bold subheading"
         flat
       >
@@ -29,8 +29,9 @@
     <v-spacer></v-spacer>
     <v-btn
       class="font-weight-bold subheading"
-      color="blue-grey darken-5"
+      color="primary"
       dark
+      @click="focusEmailInput"
     >
       Inscreva-se
       <v-icon right small>fa-arrow-right</v-icon>
@@ -41,6 +42,13 @@
 
 <script>
 export default {
-  name: 'Toolbar'
+  name: 'Toolbar',
+  methods: {
+    focusEmailInput () {
+      const emailInput = document.querySelector('#email-input')
+      emailInput.focus()
+      window.scrollY = 0
+    }
+  }
 }
 </script>
