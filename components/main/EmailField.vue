@@ -20,15 +20,16 @@
 <script>
 export default {
   name: 'EmailField',
-  data: () => ({
-    loading: false,
-    email: '',
-    successMessages: [],
-    errorMessages: [],
-    rules: [
-      (v) => !!v || 'Não envie o campo em branco!'
-    ]
-  }),
+  data () {
+    return { loading: false,
+      email: '',
+      successMessages: [],
+      errorMessages: [],
+      rules: [
+        (v) => !!v || this.successMessages.length > 0 || 'Não envie o campo em branco!'
+      ]
+    }
+  },
   methods: {
     sendEmail () {
       this.loading = true
