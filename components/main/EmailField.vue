@@ -6,7 +6,9 @@
         placeholder="Digite seu e-mail"
         solo
         append-icon="fa-arrow-right"
-        v-bind="{ loading }"
+        v-bind="{ loading, rules }"
+        :success-messages="successMessages"
+        :error-messages="errorMessages"
         @click:append="sendEmail"
         id="email-input"
       >
@@ -20,11 +22,32 @@ export default {
   name: 'EmailField',
   data: () => ({
     loading: false,
-    email: ''
+    email: '',
+    successMessages: [],
+    errorMessages: [],
+    rules: [
+      (v) => !!v || 'Não envie o campo em branco!'
+    ]
   }),
   methods: {
     sendEmail () {
-      console.log(this.email)
+      this.loading = true
+      this.errorMessages = []
+      this.successMessages = []
+
+      this
+        .$firestore
+        .collection('lead-emails').add({
+          email: this.email
+        })
+        .then(this.sendEmailSucess)
+        .catch(() => { this.errorMessages = ['Houve um erro, tente novamente!'] })
+    },
+    sendEmailSucess () {
+      this.email = ''
+      this.loading = false
+      this.successMessages = ['Email enviado com sucesso!']
+      this.errorMessages = []
     }
   }
 }
