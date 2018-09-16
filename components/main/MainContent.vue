@@ -1,6 +1,6 @@
 <template>
   <v-layout
-    class="my-5"
+    class="mt-5"
     align-center
   >
     <v-flex

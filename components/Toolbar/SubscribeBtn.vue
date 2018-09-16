@@ -5,7 +5,7 @@
     dark
     @click="focusEmailInput"
   >
-    Inscreva-se
+    Quero usar
     <v-icon right small>fa-arrow-right</v-icon>
   </v-btn>
 </template>

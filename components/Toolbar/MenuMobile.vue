@@ -1,10 +1,10 @@
 <template>
-   <v-dialog
+  <v-dialog
     v-model="dialog"
     fullscreen
     hide-overlay
     transition="slide-x-reverse-transition"
-   >
+  >
     <v-btn slot="activator" icon>
       <v-icon>fa-bars</v-icon>
     </v-btn>
