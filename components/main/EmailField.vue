@@ -1,12 +1,18 @@
 <template>
   <v-form v-model="valid" @submit.prevent="sendEmail">
-    <v-layout class="mb-3">
-      <v-flex lg3 offset-lg2>
+    <v-layout class="my-3">
+      <v-flex
+        md3 offset-md2
+        xs10 offset-xs1
+      >
         <h6 class="primary--text font-weight-regular title">Seja um dos primeiros a utilizar!</h6>
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex lg3 offset-lg2>
+      <v-flex
+        md3 offset-md2
+        xs10 offset-xs1
+      >
         <v-text-field
           v-model="email"
           placeholder="Digite seu e-mail"
@@ -44,11 +50,10 @@ export default {
         this.errorMessages = []
         this.successMessages = []
 
-        const { email } = this
         this
           .$firestore
           .collection('lead-emails')
-          .add({ email })
+          .add({ email: this.email })
           .then(this.sendEmailSucess)
           .catch(() => { this.errorMessages = ['Houve um erro, tente novamente!'] })
       }

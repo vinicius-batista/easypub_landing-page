@@ -9,8 +9,8 @@
       <v-icon>fa-bars</v-icon>
     </v-btn>
     <v-card color="#f0f0f0">
-      <v-layout wrap class="pa-5">
-        <v-flex xs1 offset-xs5 justify-center class="pt-5">
+      <v-layout class="pt-5" justify-center>
+        <v-flex xs1 class="pt-5">
           <v-btn
             icon
             @click="dialog = false"
@@ -19,7 +19,9 @@
             <v-icon>fa-times</v-icon>
           </v-btn>
         </v-flex>
-        <v-flex xs8 offset-xs2>
+      </v-layout>
+      <v-layout justify-center>
+        <v-flex xs8>
           <v-list class="links-list">
             <v-list-tile
               v-for="(item, i) in items"
@@ -34,6 +36,10 @@
               </v-list-tile-title>
             </v-list-tile>
           </v-list>
+        </v-flex>
+      </v-layout>
+      <v-layout justify-center>
+        <v-flex xs5>
           <SubscribeBtn @click="dialog = false"/>
         </v-flex>
       </v-layout>

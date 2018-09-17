@@ -1,10 +1,11 @@
 <template>
   <v-layout
     class="mt-5"
-    align-center
+    justify-center
   >
     <v-flex
-      lg4 offset-lg2
+      md4
+      xs10
       class="mt-5"
     >
       <h3 class="primary--text font-weight-bold display-1 mb-3">
@@ -15,8 +16,8 @@
       </h6>
     </v-flex>
     <v-flex
-      lg4
-      class="mt-5"
+      md4
+      class="mt-5 hidden-sm-and-down"
     >
       <v-img :src="require('~/assets/images/principal-photo.png')"></v-img>
     </v-flex>
