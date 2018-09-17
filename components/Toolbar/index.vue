@@ -7,7 +7,13 @@
   >
     <v-spacer class="hidden-xs-only"></v-spacer>
     <v-toolbar-title>
-      <a class="primary--text font-weight-bold headline">EasyPub</a>
+      <nuxt-link
+        to="/"
+        class="primary--text font-weight-bold headline"
+        style="text-decoration: none;"
+      >
+        EasyPub
+      </nuxt-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <LinksItems class="hidden-xs-only" />
