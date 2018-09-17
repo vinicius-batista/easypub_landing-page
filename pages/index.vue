@@ -18,8 +18,10 @@ export default {
 </script>
 
 <style scoped>
-.container-fullscreen {
-  min-height: calc(100vh - 64px);
-  height:  calc(100vh - 64px);
+@media all and (min-width: 960px) {
+  .container-fullscreen {
+    min-height: calc(100vh - 64px);
+    height:  calc(100vh - 64px);
+  }
 }
 </style>

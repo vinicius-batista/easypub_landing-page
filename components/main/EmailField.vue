@@ -5,7 +5,7 @@
         md3 offset-md2
         xs10 offset-xs1
       >
-        <h6 class="primary--text font-weight-regular title">Seja um dos primeiros a utilizar!</h6>
+        <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
       </v-flex>
     </v-layout>
     <v-layout>
