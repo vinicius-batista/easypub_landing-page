@@ -17,7 +17,7 @@ export default {
     focusEmailInput () {
       const emailInput = document.querySelector('#email-input')
       emailInput.focus()
-      window.scrollY = 0
+      this.$vuetify.goTo(0, 0)
       this.$emit('click')
     }
   }
