@@ -2,6 +2,11 @@
   <v-form v-model="valid" @submit.prevent="sendEmail">
     <v-layout>
       <v-flex lg3 offset-lg2>
+        <h6 class="primary--text font-weight-regular title">Seja um dos primeiros a utilizar!</h6>
+      </v-flex>
+    </v-layout>
+    <v-layout>
+      <v-flex lg3 offset-lg2>
         <v-radio-group v-model="clientType" row>
         <v-radio label="Sou cliente" value="cliente"></v-radio>
         <v-radio label="Tenho estabelecimento" value="dono estabelecimento"></v-radio>
