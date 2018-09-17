@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="container-fullscreen">
     <MainContent />
     <EmailField />
   </v-container>
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container-fullscreen {
+  min-height: calc(100vh - 64px);
+  height:  calc(100vh - 64px);
+}
+</style>

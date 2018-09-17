@@ -4,15 +4,18 @@
     <v-content app>
       <nuxt />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Toolbar from '@/components/Toolbar'
+import Footer from '@/components/Footer'
 export default {
-  name: 'ola',
+  name: 'DefaultLayout',
   components: {
-    Toolbar
+    Toolbar,
+    Footer
   }
 }
 </script>
