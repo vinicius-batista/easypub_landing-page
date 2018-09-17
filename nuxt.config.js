@@ -17,6 +17,17 @@ module.exports = {
     ]
   },
   plugins: ['~/plugins/vuetify.js', '~/plugins/firebase.js'],
+  modules: [
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-125974407-1',
+        debug: {
+          sendHitTask: process.env.NODE_ENV === 'production'
+        }
+      }
+    ]
+  ],
   css: [
     '~/assets/style/app.styl'
   ],
