@@ -1,18 +1,18 @@
 <template>
-  <v-form v-model="valid" @submit.prevent="sendEmail">
-    <v-layout class="my-3">
-      <v-flex
-        md3 offset-md2
-        xs10 offset-xs1
-      >
-        <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
-      </v-flex>
-    </v-layout>
-    <v-layout>
-      <v-flex
-        md3 offset-md2
-        xs10 offset-xs1
-      >
+  <v-layout wrap align-content-space-around>
+    <v-flex
+      md4 offset-md4
+      xs12
+      class="mb-3"
+    >
+      <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
+    </v-flex>
+    <v-flex
+      md4 offset-md4
+      xs12
+      sm6 offset-sm3
+    >
+      <v-form v-model="valid" @submit.prevent="sendEmail">
         <v-text-field
           v-model="email"
           placeholder="Digite seu e-mail"
@@ -24,16 +24,17 @@
           @click:append="sendEmail"
           id="email-input"
         />
-      </v-flex>
-    </v-layout>
-  </v-form>
+      </v-form>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
 export default {
   name: 'EmailField',
   data () {
-    return { loading: false,
+    return {
+      loading: false,
       email: '',
       valid: false,
       successMessages: [],
