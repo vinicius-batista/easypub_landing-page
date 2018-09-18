@@ -4,11 +4,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'EasyPub',
+    title: 'EasyPub - Soluções digitais para bares',
     meta: [
       { charset: 'utf-8' },
+      { name: 'lang', content: 'pt_BR' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'EasyPub' }
+      { hid: 'description', name: 'description', content: 'Easypub é uma plataforma criada para agilizar o atendimento em bares. Além disso, conta com cardápios digitais.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -21,10 +22,7 @@ module.exports = {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-125974407-1',
-        debug: {
-          sendHitTask: process.env.NODE_ENV === 'production'
-        }
+        id: 'UA-125974407-1'
       }
     ]
   ],
