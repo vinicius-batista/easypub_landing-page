@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-parallax
-      :src="require('~/assets/images/background-photo.png')"
+      :src="require('~/assets/images/background-photo.jpeg')"
       height="900"
       alt="Plano de fundo - Homem em bar utilizando o celular"
     >
