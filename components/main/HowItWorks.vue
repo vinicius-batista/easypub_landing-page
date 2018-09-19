@@ -6,7 +6,7 @@
     wrap
     class="my-5"
   >
-    <v-flex xs12 sm4 class="my-3">
+    <v-flex xs12 sm4 class="mt-5">
       <div class="text-xs-center">
         <h2 class="primary--text headline font-weight-bold">Como funciona</h2>
       </div>
@@ -22,7 +22,7 @@
           >
             <v-card flat class="transparent">
               <v-card-text class="text-xs-center">
-                <v-icon x-large class="primary--text">{{ icon }}</v-icon>
+                <v-icon x-large class="secondary--text">{{ icon }}</v-icon>
               </v-card-text>
               <v-card-title primary-title class="layout justify-center">
                 <span class="headline primary--text font-weight-medium text-xs-center">

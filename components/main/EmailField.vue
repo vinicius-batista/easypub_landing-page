@@ -1,9 +1,9 @@
 <template>
-  <v-layout wrap align-content-space-around>
+  <v-layout wrap align-content-space-around class="my-5">
     <v-flex
       md4 offset-md4
       xs12
-      class="mb-3"
+      class="mb-3 mt-5"
     >
       <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
     </v-flex>
@@ -11,6 +11,7 @@
       md4 offset-md4
       xs12
       sm6 offset-sm3
+      class="mb-5"
     >
       <v-form v-model="valid" @submit.prevent="sendEmail">
         <v-text-field
