@@ -19,7 +19,10 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Entre em contato: contato@easypub.com.br
+        Entre em contato:
+        <a href="mailto:contato@easypub.com.br" class="white--text" style="text-decoration: none;">
+          contato@easypub.com.br
+        </a>
       </v-card-text>
 
       <v-divider></v-divider>
