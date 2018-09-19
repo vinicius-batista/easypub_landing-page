@@ -6,7 +6,6 @@
       color="primary"
       class="font-weight-bold subheading"
       flat
-      :to="item"
     >
       {{ item }}
     </v-btn>
