@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color: #f0f0f0">
+  <v-app light>
     <Toolbar />
     <v-content app>
       <nuxt />
