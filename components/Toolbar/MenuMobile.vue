@@ -22,24 +22,23 @@
       </v-layout>
       <v-layout justify-center>
         <v-flex xs8>
-          <v-list class="links-list">
+          <v-list class="transparent">
             <v-list-tile
-              v-for="(item, i) in items"
+              v-for="({ label, element }, i) in items"
               :key="i"
-              :to="item"
-              @click="dialog = false"
+              @click="goTo(element)"
             >
               <v-list-tile-title
-                class="font-weight-bold subheading primary--text text-xs-center"
+                class="font-weight-bold title primary--text text-xs-center"
               >
-                {{ item }}
+                {{ label }}
               </v-list-tile-title>
             </v-list-tile>
           </v-list>
         </v-flex>
       </v-layout>
       <v-layout justify-center>
-        <v-flex xs5>
+        <v-flex xs6>
           <SubscribeBtn @click="dialog = false"/>
         </v-flex>
       </v-layout>
@@ -55,13 +54,22 @@ export default {
   components: { SubscribeBtn },
   data: () => ({
     dialog: false,
-    items: ['Sobre', 'Como Funciona']
-  })
+    items: [
+      {
+        label: 'Sobre',
+        element: '#about'
+      },
+      {
+        label: 'Como Funciona',
+        element: '#how-it-works'
+      }
+    ]
+  }),
+  methods: {
+    goTo (element) {
+      this.dialog = false
+      this.$vuetify.goTo(element)
+    }
+  }
 }
 </script>
-
-<style scoped>
-.links-list {
-  background-color: #f0f0f0;
-}
-</style>
