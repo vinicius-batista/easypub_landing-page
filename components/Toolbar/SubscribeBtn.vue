@@ -3,6 +3,7 @@
     class="font-weight-bold subheading"
     color="primary"
     dark
+    large
     @click="focusEmailInput"
   >
     Quero usar
@@ -19,6 +20,7 @@ export default {
       emailInput.focus()
       this.$vuetify.goTo(emailInput)
       this.$emit('click')
+      this.$ga.event('SubscribeButton', 'click', 'Lead')
     }
   }
 }
