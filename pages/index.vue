@@ -7,7 +7,9 @@
     >
       <MainContent />
     </v-parallax>
-    <v-container >
+    <v-container fluid grid-list-xs grid-list-xl>
+      <About />
+      <HowItWorks />
       <EmailField />
     </v-container>
   </div>
@@ -16,20 +18,15 @@
 <script>
 import MainContent from '@/components/main/MainContent'
 import EmailField from '@/components/main/EmailField'
+import About from '@/components/main/About'
+import HowItWorks from '@/components/main/HowItWorks'
 
 export default {
   components: {
     MainContent,
-    EmailField
+    EmailField,
+    About,
+    HowItWorks
   }
 }
 </script>
-
-<style scoped>
-@media all and (min-width: 960px) {
-  .container-fullscreen {
-    min-height: calc(100vh - 64px);
-    height:  calc(100vh - 64px);
-  }
-}
-</style>

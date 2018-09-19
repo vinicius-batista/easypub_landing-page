@@ -1,13 +1,14 @@
 <template>
   <v-toolbar-items>
     <v-btn
-      v-for="(item, i) in items"
+      v-for="({ label, element }, i) in items"
       :key="i"
       color="primary"
       class="font-weight-bold subheading"
       flat
+      @click="$vuetify.goTo(element)"
     >
-      {{ item }}
+      {{ label }}
     </v-btn>
   </v-toolbar-items>
 </template>
@@ -16,7 +17,16 @@
 export default {
   name: 'LinksItems',
   data: () => ({
-    items: ['Sobre', 'Como Funciona']
+    items: [
+      {
+        label: 'Sobre',
+        element: '#about'
+      },
+      {
+        label: 'Como Funciona',
+        element: '#how-it-works'
+      }
+    ]
   })
 }
 </script>
