@@ -9,7 +9,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'lang', content: 'pt_BR' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Easypub é uma plataforma criada para agilizar o atendimento em bares com cardápios, comandas e pagamentos digitais.' }
+      { hid: 'description', name: 'description', content: 'EasyPub é uma plataforma criada para agilizar o atendimento em bares com cardápios, comandas e pagamentos digitais.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
