@@ -1,5 +1,5 @@
 echo "Generate Pages"
-npm run generate
+NODE_ENV=production npm run generate
 
 echo "Clean public"
 rm -rf public/*
