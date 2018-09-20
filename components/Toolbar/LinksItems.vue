@@ -6,7 +6,7 @@
       color="primary"
       class="font-weight-bold subheading"
       flat
-      @click="$vuetify.goTo(element)"
+      @click="$vuetify.goTo(element, { offset: -60 })"
     >
       {{ label }}
     </v-btn>

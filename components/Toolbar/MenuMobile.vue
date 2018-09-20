@@ -26,7 +26,7 @@
             <v-list-tile
               v-for="({ label, element }, i) in items"
               :key="i"
-              @click="goTo(element)"
+              @click="goTo(element, { offset: -1999 })"
             >
               <v-list-tile-title
                 class="font-weight-bold title primary--text text-xs-center"
