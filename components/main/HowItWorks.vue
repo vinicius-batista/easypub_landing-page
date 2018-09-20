@@ -18,7 +18,9 @@
             v-for="({ icon, text, title}, i) in items"
             :key="i"
             xs12
-            md2
+            sm6
+            md3
+            xl2
           >
             <v-card flat class="transparent">
               <v-card-text class="text-xs-center">

@@ -8,9 +8,10 @@
       <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
     </v-flex>
     <v-flex
-      md4 offset-md4
+      md6 offset-md3
+      xl4 offset-xl4
       xs12
-      sm6 offset-sm3
+      sm8 offset-sm2
       class="mb-5"
     >
       <v-form v-model="valid" @submit.prevent="sendEmail">

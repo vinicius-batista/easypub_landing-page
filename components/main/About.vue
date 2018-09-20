@@ -6,10 +6,10 @@
     wrap
     class="my-5"
   >
-    <v-flex xs12 md4>
+    <v-flex xs12 md5 xl4>
       <v-img :src="require('~/assets/images/about-min.png')"></v-img>
     </v-flex>
-    <v-flex xs10 md4>
+    <v-flex xs10 md5 xl4>
       <h2 class="primary--text display-1 font-weight-regular font-italic">
          Você é seu próprio garçom!
       </h2>
