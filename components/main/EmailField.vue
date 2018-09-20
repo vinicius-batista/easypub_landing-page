@@ -18,13 +18,22 @@
           v-model="email"
           placeholder="Digite seu e-mail"
           solo
-          append-icon="fa-arrow-right"
           v-bind="{ loading, rules }"
           :success-messages="successMessages"
           :error-messages="errorMessages"
-          @click:append="sendEmail"
           id="email-input"
-        />
+        >
+          <v-btn
+            type="submit"
+            color="secondary"
+            slot="append-outer"
+            large
+            class="send-button"
+            v-bind="{ loading }"
+          >
+            Enviar
+          </v-btn>
+        </v-text-field>
       </v-form>
     </v-flex>
   </v-layout>
@@ -69,3 +78,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.send-button {
+  margin: 0 0;
+  left: -8px;
+  top: -12px;
+  height: 3.2em;
+}
+</style>
