@@ -12,7 +12,7 @@
         class="primary--text font-weight-bold headline"
         style="text-decoration: none;"
       >
-        EasyPub
+        <img :src="require('~/assets/images/logo.png')" alt="" width="150" height="80">
       </nuxt-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>

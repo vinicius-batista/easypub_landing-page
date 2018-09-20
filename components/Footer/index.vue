@@ -5,7 +5,7 @@
   >
     <v-card
       flat
-      class="primary white--text text-xs-center flex"
+      class="tertiary white--text text-xs-center flex"
     >
       <v-card-text>
         <v-btn

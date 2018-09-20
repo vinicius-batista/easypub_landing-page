@@ -5,7 +5,7 @@
       xs12
       class="mb-3 mt-5"
     >
-      <h6 class="primary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
+      <h6 class="tertiary--text font-weight-regular title text-xs-center text-md-left">Seja um dos primeiros a utilizar!</h6>
     </v-flex>
     <v-flex
       md6 offset-md3

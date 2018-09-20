@@ -29,7 +29,7 @@
               @click="goTo(element, { offset: -1999 })"
             >
               <v-list-tile-title
-                class="font-weight-bold title primary--text text-xs-center"
+                class="font-weight-bold title tertiary--text text-xs-center"
               >
                 {{ label }}
               </v-list-tile-title>

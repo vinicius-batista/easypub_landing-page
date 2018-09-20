@@ -8,7 +8,7 @@
   >
     <v-flex xs12 sm4 class="mt-5">
       <div class="text-xs-center">
-        <h2 class="primary--text headline font-weight-bold">Como funciona</h2>
+        <h2 class="tertiary--text headline font-weight-bold">Como funciona</h2>
       </div>
     </v-flex>
     <v-flex xs12>
@@ -27,7 +27,7 @@
                 <v-icon x-large class="secondary--text">{{ icon }}</v-icon>
               </v-card-text>
               <v-card-title primary-title class="layout justify-center">
-                <span class="headline primary--text font-weight-medium text-xs-center">
+                <span class="headline tertiary--text font-weight-medium text-xs-center">
                   {{ title }}
                 </span>
               </v-card-title>

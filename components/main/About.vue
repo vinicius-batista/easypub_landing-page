@@ -10,7 +10,7 @@
       <v-img :src="require('~/assets/images/about-min.png')"></v-img>
     </v-flex>
     <v-flex xs10 md5 xl4>
-      <h2 class="primary--text display-1 font-weight-regular font-italic">
+      <h2 class="tertiary--text display-1 font-weight-regular font-italic">
          Você é seu próprio garçom!
       </h2>
       <h4 class="blue-grey--text text--darken-1 title mt-5">

@@ -3,7 +3,7 @@
     <v-btn
       v-for="({ label, element }, i) in items"
       :key="i"
-      color="primary"
+      color="tertiary"
       class="font-weight-bold subheading"
       flat
       @click="$vuetify.goTo(element, { offset: -60 })"
