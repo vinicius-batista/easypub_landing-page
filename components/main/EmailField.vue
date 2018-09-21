@@ -65,7 +65,7 @@ export default {
         this
           .$firestore
           .collection('lead-emails')
-          .add({ email: this.email })
+          .add({ email: this.email.toLowerCase() })
           .then(this.sendEmailSucess)
           .catch(() => { this.errorMessages = ['Houve um erro, tente novamente!'] })
       }
