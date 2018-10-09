@@ -1,4 +1,4 @@
-const title = 'EasyPub - Soluções digitais para bares'
+const title = 'EasyPub - Seu garçom virtual'
 const description = 'EasyPub é uma plataforma criada para agilizar o atendimento em bares com cardápios, comandas e pagamentos digitais.'
 const url = 'https://easypub.com.br/'
 
