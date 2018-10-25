@@ -10,21 +10,18 @@
     <v-container fluid grid-list-xs grid-list-xl>
       <About />
       <HowItWorks />
-      <EmailField />
     </v-container>
   </div>
 </template>
 
 <script>
 import MainContent from '@/components/main/MainContent'
-import EmailField from '@/components/main/EmailField'
 import About from '@/components/main/About'
 import HowItWorks from '@/components/main/HowItWorks'
 
 export default {
   components: {
     MainContent,
-    EmailField,
     About,
     HowItWorks
   }

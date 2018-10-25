@@ -4,10 +4,10 @@
     color="primary"
     dark
     large
+    href="https://app.easypub.com.br/#/auth/register"
     @click="focusEmailInput"
   >
-    Quero usar
-    <v-icon right small>fa-arrow-right</v-icon>
+    QUERO USAR
   </v-btn>
 </template>
 
@@ -16,10 +16,6 @@ export default {
   name: 'SubscribeBtn',
   methods: {
     focusEmailInput () {
-      const emailInput = document.querySelector('#email-input')
-      emailInput.focus()
-      this.$vuetify.goTo(emailInput)
-      this.$emit('click')
       this.$ga.event('SubscribeButton', 'click', 'Lead')
     }
   }
